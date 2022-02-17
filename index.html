@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+        <!-- Header part -->
+      <div class="header">
+        WEATHER APP
+
+        <input
+          type="text"
+          id="myInput"
+          onkeyup="myFunction()"
+          placeholder="Search for names.."
+          title="Type in a name"
+        />
+      </div>
+     
+<!-- Main Content -->
+      <div class="maincontent">
+
+        <!-- Sidebar that contains get weather -->
+        <div class="sidebar">
+          <div class="getweather">Get Weather</div>
+          <div class="cities">
+            <div class="city">CITY</div>
+            <div class="city" id="London">LONDON</div>
+            <div class="city" id="NewYork">NEW YORK</div>
+            <div class="city" id="LasVegas">LAS VEGAS</div>
+            <div class="city" id="LosAngeles">LOS ANGELES</div>
+          </div>
+        </div>
+
+        <!-- Main content- -->
+        <div class="content">
+          <table id="myTable">
+            <thead>
+              <tr>
+                <th>City</th>
+                <th>Description</th>
+                <th>Temperature(C)</th>
+                <th>Pressure(hpa)</th>
+                <th>Data age(hrs)</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody class="body"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
